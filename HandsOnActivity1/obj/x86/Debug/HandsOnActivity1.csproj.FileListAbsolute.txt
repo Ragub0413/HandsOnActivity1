@@ -9,3 +9,14 @@ c:\users\user\documents\visual studio 2010\Projects\Laboratory1\Laboratory1\obj\
 c:\users\user\documents\visual studio 2010\Projects\Laboratory1\Laboratory1\obj\x86\Debug\Laboratory1.FrmRegistration.resources
 C:\Users\user\Documents\Visual Studio 2010\Projects\Laboratory1\Laboratory1\obj\x86\Debug\HandsOnActivity1.csprojResolveAssemblyReference.cache
 C:\Users\user\Documents\Visual Studio 2010\Projects\Laboratory1\Laboratory1\obj\x86\Debug\Laboratory1.FrmStudentRecord.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\HandsOnActivity1\HandsOnActivity1\obj\x86\Debug\Laboratory1.exe
+C:\Users\user\Documents\Visual Studio 2010\Projects\HandsOnActivity1\HandsOnActivity1\obj\x86\Debug\Laboratory1.pdb
+C:\Users\user\Documents\Visual Studio 2010\Projects\HandsOnActivity1\HandsOnActivity1\bin\Debug\Laboratory1.exe
+C:\Users\user\Documents\Visual Studio 2010\Projects\HandsOnActivity1\HandsOnActivity1\bin\Debug\Laboratory1.pdb
+C:\Users\user\Documents\Visual Studio 2010\Projects\HandsOnActivity1\HandsOnActivity1\obj\x86\Debug\HandsOnActivity1.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2010\Projects\HandsOnActivity1\HandsOnActivity1\obj\x86\Debug\Laboratory1.FrmLab1.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\HandsOnActivity1\HandsOnActivity1\obj\x86\Debug\Laboratory1.FrmFileName.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\HandsOnActivity1\HandsOnActivity1\obj\x86\Debug\Laboratory1.FrmRegistration.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\HandsOnActivity1\HandsOnActivity1\obj\x86\Debug\Laboratory1.FrmStudentRecord.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\HandsOnActivity1\HandsOnActivity1\obj\x86\Debug\Laboratory1.Properties.Resources.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\HandsOnActivity1\HandsOnActivity1\obj\x86\Debug\HandsOnActivity1.csproj.GenerateResource.Cache

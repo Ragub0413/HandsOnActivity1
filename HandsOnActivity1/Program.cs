@@ -15,7 +15,7 @@ namespace Laboratory1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmRegistration());
+            Application.Run(new FrmLab1());
         }
     }
 }

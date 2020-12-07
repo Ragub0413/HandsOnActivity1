@@ -14,6 +14,70 @@ namespace Laboratory1
     public partial class FrmRegistration : Form
     {
         public static string FileNames;
+
+
+        private String _FullName;
+        private int _Age;
+        private long _ContactNo;
+        private long _StudentNo;
+
+
+        public long StudentNumber(string studNum)
+        {
+
+            _StudentNo = long.Parse(studNum);
+
+            return _StudentNo;
+        }
+
+        public long ContactNo(string Contact)
+        {
+            if (Regex.IsMatch(Contact, @"^[0-9]{10,11}$"))
+            {
+                _ContactNo = long.Parse(Contact);
+            }
+            else
+            {
+                throw new FormatException();
+                throw new ArgumentNullException();
+                throw new OverflowException();
+                throw new IndexOutOfRangeException();
+            }
+
+            return _ContactNo;
+        }
+        public string FullName(string LastName, string FirstName, string MiddleInitial)
+        {
+            if (Regex.IsMatch(LastName, @"^[a-zA-Z]+$") || Regex.IsMatch(FirstName, @"^[a-zA-Z]+$") || Regex.IsMatch(MiddleInitial, @"^[a-zA-Z]+$"))
+            {
+                _FullName = LastName + ", " + FirstName + ", " + MiddleInitial;
+            }
+            else
+            {
+                throw new ArgumentNullException();
+            }
+
+
+            return _FullName;
+        }
+        public int Age(string age)
+        {
+            if (Regex.IsMatch(age, @"^[0-9]{1,3}$"))
+            {
+                _Age = Int32.Parse(age);
+            }
+            else
+            {
+                throw new FormatException();
+                throw new ArgumentNullException();
+                throw new OverflowException();
+                throw new IndexOutOfRangeException();
+            }
+
+            return _Age;
+        }
+
+
         public FrmRegistration()
         {
             InitializeComponent();
@@ -22,17 +86,18 @@ namespace Laboratory1
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-           
+            try
+            {
 
                 string[] Information = new string[]{
 
-                "Student No.: " + txtStudentNo.Text,
-                "Full Name: " + txtLastName.Text + "," + txtFirstName.Text+ "," + txtMiddleInitial.Text,
+                "Student No.: " + StudentNumber(txtStudentNo.Text),
+                "Full Name: " + FullName(txtLastName.Text,txtFirstName.Text,txtMiddleInitial.Text),
                 "Program: "+ cbProgram.Text,
                 "Gender: " + cbGender.Text,
-                "Age: " + txtAge.Text,
+                "Age: " + Age(txtAge.Text),
                 "Birthday: "+ dpBirthday.Value.ToString("yyyy-MM-dd"),
-                "Contact No.: " + txtContactNo.Text
+                "Contact No.: " + ContactNo(txtContactNo.Text)
             };
 
 
@@ -49,15 +114,32 @@ namespace Laboratory1
                         Console.WriteLine(i);
                     }
 
+                    txtAge.Clear();
+                    txtStudentNo.Clear();
+                    txtFirstName.Clear();
+                    txtLastName.Clear();
+                    txtMiddleInitial.Clear();
+                    txtContactNo.Clear();
                 }
+            }
+            catch (FormatException f)
+            {
+                MessageBox.Show(f.Message);
+            }
+            catch (ArgumentNullException a)
+            {
+                MessageBox.Show(a.Message);
+            }
+            catch (OverflowException o)
+            {
+                MessageBox.Show(o.Message);
+            }
+            catch (IndexOutOfRangeException i)
+            {
+                MessageBox.Show(i.Message);
+            }
 
-
-                txtAge.Clear();
-                txtStudentNo.Clear();
-                txtFirstName.Clear();
-                txtLastName.Clear();
-                txtMiddleInitial.Clear();
-                txtContactNo.Clear();
+               
             
            
         }
